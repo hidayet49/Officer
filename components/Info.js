@@ -109,7 +109,7 @@ function Info({ route, navigation }) {
   if (!load) {
     return (
       <View style={[styles.container, styles.horizontal]}>
-        <View style={{ alignItems: "center", justifyContent: "center" }}>
+        <View style={{ flex:1,alignItems: "center", justifyContent: "center", alignContent: 'center', }}>
           <Text style={styles.text2}>JUST A MOMENT!!</Text>
           <Text style={styles.text2}> WE ARE PREPARING</Text>
           <Text style={styles.text2}>YOUR DATA..</Text>
@@ -137,7 +137,7 @@ function Info({ route, navigation }) {
           <TouchableOpacity style={styles.button} onPress={createAppForm}>
             <View style={styles.row}>
               <FontAwesome name="download" size={40} color="white" />
-              <Text style={styles.text,{fontSize:15}}>CREATE APPLICATION FORM</Text>
+              <Text style={styles.text}>CREATE APPLICATION FORM</Text>
             </View>
           </TouchableOpacity>
         </SafeAreaView>
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   text: {
-    fontSize: 15,
+    fontSize: 22,
     color: "white",
     alignItems: "center",
     padding: 5
@@ -171,6 +171,7 @@ const styles = StyleSheet.create({
   text2: {
     fontSize: 25,
     color: "white",
+    justifyContent:"center",
     alignItems: "center",
     padding: 5
   },

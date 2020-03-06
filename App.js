@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Home from './components/Home'
 import Info from './components/Info'
 import Calendar from './components/calendar'
-import Show from './components/show'
 
 const Stack = createStackNavigator();
 
@@ -14,7 +13,6 @@ function MainStackNavigator() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name='Home' component={Home} />
         <Stack.Screen name='Info' component={Info} options={{ title: 'THE OFFICE' }}/>
-        <Stack.Screen name='Show' component={Show} />
       </Stack.Navigator>
     </NavigationContainer>
   )
